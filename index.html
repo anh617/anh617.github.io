@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- báo hiệu tất cả cái dùng là tiếng anh -->
+<head> <!-- trong head đựng dc các thẻ meta -->
+	<!-- meta là thẻ đơn , meta là thông tin cho vào web meta là cái người dùng không thể thấy được(thông tin ẩn Ex: địa chỉ ID)
+	meta dùng để tối ưu hóa web
+	name = attribut content = giá trị của name -->
+	<meta charset="utf-8">
+	<meta name="description" content="First Webs"/>
+	<meta name="author" content="Mai Linh"/>
+	<meta name="country" content="Viet Nam"/>
+	<!-- đường dẫn đến css -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="css/background.css">
+	<!-- title thay đổi tên link -->
+	<title>Linh resume</title>	
+</head>
+<body> 
+	<!-- tạo menu dùng nav dùng link phải có id muốn dùng css thì phải id (đặt id nên ngắn và có nghĩa)
+	phải có dấu # để hoạt động cả id -->
+     <h1 id="menu_test"> Mai Linh </h1>
+     <nav>
+     	<a href="#contact" class="menu_left">Contact</a>
+     	<a href="#education" class="menu_left">Education</a>
+     	<a href="#scores" class="menu_left">Score</a>
+     	<a href="#social" class="menu_right">Social media</a>
+     </nav>
+     <!-- alt (thay thế) để hiện khi file ảnh bị lỗi -->
+     <div id="flex_box">
+	     <div id="left_side">
+		     <img src="cute.png" alt="My photo" width="200" height="200"/>
+		    
+		     <h2 id="contact">Contact information</h2>
+		     <!--  cần cho p để kiểm soát dễ hơn, ảnh hưởng cái sau 
+		    in đậm có thể dùng strong or...    in nghiêng em
+		    kí tự xuống dòng br 
+		    validator ktra code-->
+
+		     <p><i>I am working in the information technology field</i></p>
+		     <!-- unordered list ul  -->
+		     <ul>
+		     	<li><b>Fullname</b>: Mai Linh</li>
+		     	<li><b>Country</b>: Viet Nam</li>
+		     </ul>
+		     <!-- horizontal line  -->
+		     
+		     <h2 id="education">Education</h2>
+		     <ol>
+		     	<li>Cap mot: Tieu hoc </li>
+		     	<li>Cap hai: Trung hoc</li>
+		     	<li>Cap ba: Pho thong</li>
+		     </ol>
+		     
+		     <h2 id="scores">Scores</h2>
+		    <!-- tạo bảng tr trong table là cột ngang border là viền của bảng 1 là độ dày của viền
+		    td(tabledata) là viết thường th(tablehead) là in đậm
+		    chia Math thành 2 cột thì dùng colspan (col là cột, span trải rộng)
+		    muốn chiếm 2 hàng ghi là rowspan -->
+		     <table >
+		     	<tbody>
+			     	<tr> 
+			     		<th rowspan="2"></th>
+			     		<th colspan="2">Math</th>
+			     		<th rowspan="2">Physics</th>
+			     		<th rowspan="2">IT</th>
+			     	</tr>
+			     	<tr>
+			     		
+			     		<th>Math1</th>
+			     		<th>Math2</th>
+
+			     	</tr>	
+			     	<tr>
+			     		<th>2019</th>
+			     		<td>10</td>
+			     		<td>0</td>
+			     		<td>7</td>
+			     		<td>8</td>
+			     	</tr>
+			     	<tr>
+			     		<th>2020</th>
+			     		<td>10</td>
+			     		<td>0</td>
+			     		<td>2</td>
+			     		<td>9</td>
+			     	</tr>
+			     	<tr>
+			     		<th>2021</th>
+			     		<td>9</td>
+			     		<td>0</td>
+			     		<td>10</td>
+			     		<td>1</td>
+			     	</tr>
+			     </tbody>
+		     </table>
+
+		     <h2 id="social">Social Media</h2>
+		     <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100028642385601">MắtCáo</a></p>
+            
+
+		     
+		</div>
+
+	     <div id="right_side">
+             <h2 id="course">Online Course</h2>
+             <div id="course_container">
+             	<div class="course_item">
+             		<img class="course_img" src="logictoanhoc.jpg" />
+             		<div class="course_title">Logic Math</div>
+             		<div class="course_desc">Toán tư duy cơ bản, xây dựng nền tảng cho việc học kĩ thuật và lập trình bậc đại học</div>
+             	</div>
+             	<div class="course_item">
+             		<img class="course_img" src="laptrinhweb.jpg" />
+             		<div class="course_title">Web Basic</div>
+             		<div class="course_desc">Lập trình website cho người mới bắt đầu, xây dựng website cá nhân và hệ thống backend theo ý muốn</div>
+             	</div>
+             	<div class="course_item">
+             		<img class="course_img" src="pythoncb-nc.jpg" />
+             		<div class="course_title">Python Basic</div>
+             		<div class="course_desc">Lập trình Python cơ bản đến nâng cao cho người mới, nắm vững kĩ thuật lập trình căn bản</div>
+             	</div>
+             	<div class="course_item">
+             		<img class="course_img" src="laptrinhgamepython.jpg" />
+             		<div class="course_title">Game Python</div>
+             		<div class="course_desc">Lập trình game rắn săn mồi, đồng hồ đếm ngược là flappy bird bằng thư viện đồ họa pygame</div>
+             	</div>
+             	<div class="course_item">
+             		<img class="course_img" src="pythonexcel.jpg" />
+             		<div class="course_title">Python Excel</div>
+             		<div class="course_desc">Dùng cho dân văn phòng làm liên quan đến số liệu, người trái ngành vẫn có thể học Python</div>
+             	</div>
+             	<div class="course_item">
+             		<img class="course_img" src="laptrinhai.jpg"/>
+             		<div class="course_title">Ai Basic</div>
+             		<div class="course_desc">Lập trình trí tuệ nhân tạo, thuật toán KNN, k-means, Regression và Gradient Descent, sử dụng toán cao cấp và ma trận cơ bản</div>
+             	</div>
+            </div>
+
+		    
+		 </div>
+    </div>
+
+     <footer>
+     	Created by MatCao - <a href="mailto:matcao113@gmail.com">Emai me</a>
+     </footer>
+</body>
+</html>
